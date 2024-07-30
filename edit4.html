@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Naruto Shippuden Characters</title>
+    <style>
+    /* Global Styles */
+    body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #1e2a38; /* Sampled from the character card background */
+        color: #f1f1f1; /* Light text color */
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+        overflow-x: hidden;
+    }
+    
+    .container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 20px;
+    }
+
+    /* Navigation Bar */
+    .navbar {
+        overflow: hidden;
+        background-color: #34495e; /* Sampled from the character card background */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .navbar a {
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 10px 20px;
+        text-decoration: none;
+        font-size: 17px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .navbar a:hover {
+        background-color: #2c3e50; /* Darker shade for hover effect */
+        color: #fff;
+    }
+
+    /* Header */
+    h1 {
+        text-align: center;
+        color: #ff6f61; /* Coral red for a standout title */
+        margin-bottom: 40px;
+        font-size: 3rem;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+    
+    /* Character Card Styles */
+    .character-card {
+        background-color: #1e2a38; /* Dark blue-grey for cards */
+        border-radius: 10px;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+        margin: 20px 0;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .character-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 25px rgba(0, 0, 0, 0.3);
+    }
+    
+    .character-card img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin: 20px;
+        flex-shrink: 0;
+    }
+    
+    .character-info {
+        flex: 1;
+        padding: 20px;
+    }
+    
+    .character-info h2 {
+        margin: 0 0 10px;
+        color: #ff6f61; /* Matching the title for consistency */
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    
+    .character-info p {
+        margin: 0;
+        color: #d1d1d1; /* Slightly lighter text for readability */
+        font-size: 1.2rem;
+    }
+    
+    /* Character Video */
+    .character-video {
+        margin: 20px;
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .character-video video {
+        border-radius: 10px;
+        width: 100%;
+        height: auto;
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .character-card {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .character-video {
+            width: 100%;
+            max-width: none;
+        }
+        .character-info {
+            padding: 15px;
+        }
+    }
+    
+    /* Scrollbar Styles */
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+    
+    ::-webkit-scrollbar-track {
+        background: #2c3e50; /* Dark blue-grey track */
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background: #ff6f61; /* Coral red thumb */
+        border-radius: 10px;
+    }
+    /* Footer */
+    footer {
+            background-color: #2c3e50;
+            color: #f1f1f1;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 40px;
+            box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Link Image Section */
+        .link-image-section {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .link-image-section img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .link-image-section img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 20px 25px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header style="background-color: #2c3e50; padding: 20px 0; text-align: center; box-shadow: 0 5px 10px rgba(0,0,0,0.3);">
+        <div class="container">
+            <h1 style="color: #ff6f61; margin: 0; font-size: 3.5rem; letter-spacing: 2px;">Naruto Shippuden Heroes</h1>
+            <p style="color: #f1f1f1; font-size: 1.2rem; margin-top: 10px;">Dive into the world of Naruto and explore the top 15 most beloved characters</p>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="#naruto">Naruto Uzumaki</a>
+        <a href="#sakura">Sakura Haruno</a>
+        <a href="#tsunade">Tsunade</a>
+        <a href="#sasuke">Sasuke Uchiha</a>
+        <a href="#jiraiya">Jiraiya</a>
+        <a href="#itachi">Itachi Uchiha</a>
+        <a href="#shikamaru">Shikamaru Nara</a>
+        <a href="#pain">Pain</a>
+        <a href="#kakashi">Kakashi Hatake</a>
+        <a href="#obito">Obito Uchiha</a>
+        <a href="#minato">Minato Namikaze</a>
+        <a href="#hinata">Hinata Hyuga</a>
+        <a href="#madara">Madara Uchiha</a>
+        <a href="#hashirama">Hashirama Senju</a>
+        <a href="#rocklee">Rock Lee</a>
+    </div>
+    
+    <!-- Content Container -->
+    <div class="container">
+        <h1>Top 15 Most Popular Characters in Naruto Shippuden</h1>
+
+
+        <!-- Character Cards -->
+
+            <!-- Hashirama Senju -->
+    <div id="hashirama" class="character-card">
+        <img src="C:\Users\murth\subbu\Web development\images1\hashirama2.jpg" alt="Hashirama Senju">
+        <div class="character-info">
+            <h2>15. Hashirama Senju</h2>
+            <p>As the First Hokage, Hashirama Senju is a legendary figure who laid the foundation for the Hidden Leaf Village. His vision for peace and unparalleled power are central to his legacy.</p>
+        </div>
+        <div class="character-video">
+            <video controls>
+                <source src="C:\Users\murth\subbu\Web development\videos1\hashirama_intro.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+        <!-- Rock Lee -->
+        <div id="rocklee" class="character-card">
+            <img src="C:\Users\murth\subbu\Web development\images1\rocklee.jpg" alt="Rock Lee">
+            <div class="character-info">
+                <h2>14. Rock Lee</h2>
+                <p>Rock Lee's dedication and hard work make him an inspiring character. Despite lacking ninjutsu or genjutsu abilities, his taijutsu skills and determination are unmatched.</p>
+            </div>
+            <div class="character-video">
+                <video controls>
+                    <source src="C:\Users\murth\subbu\Web development\videos1\rocklee_edit.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+
+    <!-- Shikamaru Nara -->
+    <div id="shikamaru" class="character-card">
+        <img src="C:\Users\murth\subbu\Web development\images1\shikamaru_nara.jpg" alt="Shikamaru Nara">
+        <div class="character-info">
+            <h2>13. Shikamaru Nara</h2>
+            <p>Shikamaru Nara's brilliant mind and strategic genius make him a vital member of the Hidden Leaf Village. His calm demeanor and tactical prowess are unmatched.</p>
+        </div>
+        <div class="character-video">
+            <video controls>
+                <source src="C:\Users\murth\subbu\Web development\videos1\shikamaru_intro.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+         <!-- Tsunade -->
+                <div id="tsunade" class="character-card">
+                    <img src="C:\Users\murth\subbu\Web development\images1\TSUNADE1.jpg" alt="Tsunade">
+                    <div class="character-info">
+                        <h2>12. Tsunade</h2>
+                        <p>Tsunade, another member of the Legendary Sannin, is revered for her exceptional medical skills and incredible strength. Her role as the Fifth Hokage highlights her leadership and compassion.</p>
+                    </div>
+                    <div class="character-video">
+                        <video controls>
+                            <source src="C:\Users\murth\subbu\Web development\videos1\tsunade_edit.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+
+            <!-- Hinata Hyuga -->
+            <div id="hinata" class="character-card">
+                <img src="C:\Users\murth\subbu\Web development\images1\Hinata Hyuga.jpg" alt="Hinata Hyuga">
+                <div class="character-info">
+                    <h2>11. Hinata Hyuga</h2>
+                    <p>Hinata Hyuga's gentle yet determined spirit drives her to become a strong and confident warrior. Her love for Naruto and dedication to her friends define her character.</p>
+                </div>
+                <div class="character-video">
+                    <video controls>
+                        <source src="C:\Users\murth\subbu\Web development\videos1\hinata_intro.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>    
+    
+                   <!-- Sakura Haruno -->
+       <div id="sakura" class="character-card">
+        <img src="C:\Users\murth\subbu\Web development\images1\sakura_haruno.jpg" alt="Sakura Haruno">
+        <div class="character-info">
+            <h2>10. Sakura Haruno</h2>
+            <p>Sakura Haruno evolves from a determined young ninja into a powerful warrior and skilled medical-nin. Her strength and resilience make her a key member of Team 7.</p>
+        </div>
+        <div class="character-video">
+            <video controls>
+                <source src="C:\Users\murth\subbu\Web development\videos1\sakura_intro.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+    
+            <!-- Pain -->
+            <div id="pain" class="character-card">
+                <img src="C:\Users\murth\subbu\Web development\images1\pain1.jpg" alt="Pain">
+                <div class="character-info">
+                    <h2>9. Pain</h2>
+                    <p>Pain’s true identity is Nagato Uzumaki, a war orphan who experienced profound loss and suffering. These experiences shaped his belief that pain and suffering are necessary to achieve peace in a world plagued by conflict.</p>
+                </div>
+                <div class="character-video">
+                    <video controls>
+                        <source src="C:\Users\murth\subbu\Web development\videos1\pain1_intro.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+
+    <!-- Jiraiya -->
+    <div id="jiraiya" class="character-card">
+        <img src="C:\Users\murth\subbu\Web development\images1\jiraya2.jpg" alt="Jiraiya">
+        <div class="character-info">
+            <h2>8. Jiraiya</h2>
+            <p>Jiraiya, the Legendary Sannin, is known for his wisdom, humor, and heroism. As Naruto's mentor, his teachings and sacrifices leave a lasting impact on his student.</p>
+        </div>
+        <div class="character-video">
+            <video controls>
+                <source src="C:\Users\murth\subbu\Web development\videos1\jiraya_intro.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+           <!-- Madara Uchiha -->
+           <div id="madara" class="character-card">
+            <img src="C:\Users\murth\subbu\Web development\images1\madara2.jpg" alt="Madara Uchiha">
+            <div class="character-info">
+                <h2>7. Madara Uchiha</h2>
+                <p>Madara Uchiha is one of the most formidable antagonists in the series. His immense power and complex ambitions pose a significant challenge to the shinobi world.</p>
+            </div>
+            <div class="character-video">
+                <video controls>
+                    <source src="C:\Users\murth\subbu\Web development\videos1\madara_intro2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+
+       <!-- Obito Uchiha -->
+       <div id="obito" class="character-card">
+        <img src="C:\Users\murth\subbu\Web development\images1\obito3.jpg" alt="Obito Uchiha">
+        <div class="character-info">
+            <h2>6. Obito Uchiha</h2>
+            <p>Obito Uchiha's transformation from a kind-hearted boy to a major antagonist is driven by deep loss and pain. His complex journey intertwines with the fate of the ninja world.</p>
+        </div>
+        <div class="character-video">
+            <video controls>
+                <source src="C:\Users\murth\subbu\Web development\videos1\obito_rin_love.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+        <!-- Sasuke Uchiha -->
+        <div id="sasuke" class="character-card">
+            <img src="C:\Users\murth\subbu\Web development\images1\sasuke2.jpg" alt="Sasuke Uchiha">
+            <div class="character-info">
+                <h2>5. Sasuke Uchiha</h2>
+                <p>Driven by revenge and a quest for power, Sasuke Uchiha's journey is complex and filled with inner turmoil. His rivalry with Naruto and search for redemption are central to his character.</p>
+            </div>
+            <div class="character-video">
+                <video controls>
+                    <source src="C:\Users\murth\subbu\Web development\videos1\sasuke_intro.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+
+   <!-- Kakashi Hatake -->
+   <div id="kakashi" class="character-card">
+    <img src="C:\Users\murth\subbu\Web development\images1\kakashi2.jpg" alt="Kakashi Hatake">
+    <div class="character-info">
+        <h2>4. Kakashi Hatake</h2>
+        <p>The enigmatic and wise leader of Team 7, Kakashi Hatake is known as the Copy Ninja. His vast knowledge and skills make him an invaluable mentor to Naruto and his friends.</p>
+    </div>
+    <div class="character-video">
+        <video controls>
+            <source src="C:\Users\murth\subbu\Web development\videos1\kakashi1_intro.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</div>
+
+       <!-- Minato Namikaze -->
+       <div id="minato" class="character-card">
+        <img src="C:\Users\murth\subbu\Web development\images1\minato2.jpg" alt="Minato Namikaze">
+        <div class="character-info">
+            <h2>3. Minato Namikaze</h2>
+            <p>Known as the Yellow Flash, Minato Namikaze is celebrated for his incredible speed and strategic genius. His legacy as the Fourth Hokage and Naruto's father is deeply influential.</p>
+        </div>
+        <div class="character-video">
+            <video controls>
+                <source src="C:\Users\murth\subbu\Web development\videos1\minato_intro.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+        <!-- Itachi Uchiha -->
+            <div id="itachi" class="character-card">
+                <img src="C:\Users\murth\subbu\Web development\images1\itachi1.jpeg" alt="Itachi Uchiha">
+                <div class="character-info">
+                    <h2>2. Itachi Uchiha</h2>
+                    <p>Itachi Uchiha is a character shrouded in mystery and tragedy. Initially seen as a villain, his true motives reveal a story of sacrifice and deep love for his brother Sasuke.</p>
+                </div>
+                <div class="character-video">
+                    <video controls>
+                        <source src="C:\Users\murth\subbu\Web development\videos1\itachi_intro.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                        </video>
+                        </div>
+                        </div>
+
+            <!-- Naruto Uzumaki -->
+            <div id="naruto" class="character-card">
+                <img src="C:\Users\murth\subbu\Web development\images1\naruto4.jpg" alt="Naruto Uzumaki">
+                <div class="character-info">
+                    <h2>1. Naruto Uzumaki</h2>
+                    <p>The hero of the Hidden Leaf Village, Naruto Uzumaki, strives to become the strongest ninja and the Hokage. His journey is one of determination, friendship, and overcoming adversity.</p>
+                </div>
+                <div class="character-video">
+                    <video controls>
+                        <source src="C:\Users\murth\subbu\Web development\videos1\naruto_intro.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+
+              <!-- Link Image Section -->
+        <div class="link-image-section">
+            <a href="C:\Users\murth\subbu\Web development\projects\HTML\edit2.html" target="_blank">
+                <img src="C:\Users\murth\subbu\Web development\images1\naruto2.jpg" alt="Official Naruto Website">
+            </a>
+            <p>Explore the top Naruto Shippuden characters and their legendary battles: <a href="C:\Users\murth\subbu\Web development\projects\HTML\edit2.html" class="underlined-link" target="_blank" style="color: #ff6f61;">Best Fight Arcs</a></p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+<footer style="background-color: #2c3e50; color: #f1f1f1; padding: 20px 0; text-align: center; margin-top: 40px; box-shadow: 0 -5px 10px rgba(0,0,0,0.3);">
+    <div class="container">
+        <p>&copy;Copyrights Naruto Fansite- 2024 All Rights Reserved.</p>
+        <div style="margin: 20px 0; display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;">
+            <a href="#top" style="color: #ff6f61; text-decoration: none; margin-right: 20px;">Back to Top</a>
+            <a href="https://www.facebook.com/narutoofficialsns/" target="_blank" style="color: #f1f1f1; margin: 0 10px; text-decoration: none;" aria-label="Visit our Facebook page">Facebook</a>
+            <a href="https://x.com/naruto_anime_en?lang=en" target="_blank" style="color: #f1f1f1; margin: 0 10px; text-decoration: none;" aria-label="Visit our Twitter profile">Twitter</a>
+            <a href="C:\Users\murth\subbu\Web development\projects\HTML\privacypolicy.html" style="color: #f1f1f1; text-decoration: none;" aria-label="Read our privacy policy">Privacy Policy</a>
+            <a href="C:\Users\murth\subbu\Web development\projects\HTML\termsofservice.html" style="color: #f1f1f1; text-decoration: none;" aria-label="Read our terms of service">Terms of Service</a>
+            <a href="C:\Users\murth\subbu\Web development\projects\HTML\contactus.html" style="color: #f1f1f1; text-decoration: none;" aria-label="Contact us">Contact Us</a>
+        </div>
+        <!-- Footer Personalization -->
+        <p style="text-align: center;">Created with passion for Naruto Shippuden by SUBBU</p>
+    </div>
+
+    <!-- Style Enhancements for Hover Effects -->
+    <style>
+        footer a:hover {
+            color: #ff6f61; /* Highlight color on hover */
+            text-decoration: underline; /* Underline on hover for emphasis */
+        }
+    </style>
+</footer>
+
+</body>
+</html>
